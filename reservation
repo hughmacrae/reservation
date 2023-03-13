@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservation Form</title>
+  <style>
+    /* CSS styles for the form */
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    /* CSS styles for the credit card field */
+    .card {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .card label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .card .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .card .cvv {
+      width: 45%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="checkin">Check-in Date:</label>
+    <input type="text" id="checkin" name="checkin" required>
+
+    <label for="checkout">Check-out Date:</label>
+    <input type="text" id="checkout" name="checkout" required>
+
+    <div class="card">
+      <h2>Credit Card Information</h2>
+      <label for="cardnumber">Card Number:</label>
+      <input type="text" id="cardnumber" name="cardnumber" required>
+
+      <div class="row">
+        <div class="expiry">
+          <label for="expmonth">Expiration Month:</label>
+          <select id="expmonth" name="expmonth" required>
+            <option value="">--Select Month--</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="
